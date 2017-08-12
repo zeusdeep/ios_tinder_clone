@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5F05BAD104BF1E51883F22E5 /* Pods_TinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C936BDE2A0D41EC116C78860 /* Pods_TinderClone.framework */; };
+		FF765F4E1F3E9463002CAF2F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765F4D1F3E9463002CAF2F /* Coordinator.swift */; };
+		FF765F501F3E9489002CAF2F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765F4F1F3E9489002CAF2F /* AppCoordinator.swift */; };
+		FF765F521F3E96F1002CAF2F /* TinderRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765F511F3E96F1002CAF2F /* TinderRootViewController.swift */; };
 		FFBC1E101F3E8AD2001ABDEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC1E0F1F3E8AD2001ABDEB /* AppDelegate.swift */; };
-		FFBC1E121F3E8AD2001ABDEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC1E111F3E8AD2001ABDEB /* ViewController.swift */; };
 		FFBC1E171F3E8AD3001ABDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBC1E161F3E8AD3001ABDEB /* Assets.xcassets */; };
-		FFBC1E221F3E8B7A001ABDEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC1E211F3E8B7A001ABDEB /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B607848D4693A8B697E3312D /* Pods-TinderClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderClone/Pods-TinderClone.release.xcconfig"; sourceTree = "<group>"; };
 		BCB60B3215EF799E160895AE /* Pods-TinderClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderClone/Pods-TinderClone.debug.xcconfig"; sourceTree = "<group>"; };
 		C936BDE2A0D41EC116C78860 /* Pods_TinderClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF765F4D1F3E9463002CAF2F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Code/Coordinators/Coordinator.swift; sourceTree = "<group>"; };
+		FF765F4F1F3E9489002CAF2F /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = Code/Coordinators/AppCoordinator.swift; sourceTree = "<group>"; };
+		FF765F511F3E96F1002CAF2F /* TinderRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinderRootViewController.swift; path = Code/ViewControllers/TinderRootViewController.swift; sourceTree = "<group>"; };
 		FFBC1E0C1F3E8AD2001ABDEB /* TinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBC1E0F1F3E8AD2001ABDEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFBC1E111F3E8AD2001ABDEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFBC1E161F3E8AD3001ABDEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBC1E1B1F3E8AD3001ABDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFBC1E211F3E8B7A001ABDEB /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Code/Coordinators/Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF765F4C1F3E940D002CAF2F /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				FFBC1E0F1F3E8AD2001ABDEB /* AppDelegate.swift */,
+				FFBC1E1B1F3E8AD3001ABDEB /* Info.plist */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
 		FFBC1E031F3E8AD2001ABDEB = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +87,9 @@
 		FFBC1E0E1F3E8AD2001ABDEB /* TinderClone */ = {
 			isa = PBXGroup;
 			children = (
+				FF765F4C1F3E940D002CAF2F /* misc */,
 				FFBC1E231F3E8C22001ABDEB /* Code */,
-				FFBC1E0F1F3E8AD2001ABDEB /* AppDelegate.swift */,
-				FFBC1E111F3E8AD2001ABDEB /* ViewController.swift */,
 				FFBC1E161F3E8AD3001ABDEB /* Assets.xcassets */,
-				FFBC1E1B1F3E8AD3001ABDEB /* Info.plist */,
-				FFBC1E211F3E8B7A001ABDEB /* Coordinator.swift */,
 			);
 			path = TinderClone;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 		FFBC1E241F3E8C34001ABDEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF765F511F3E96F1002CAF2F /* TinderRootViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -107,6 +116,8 @@
 		FFBC1E251F3E8CA4001ABDEB /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				FF765F4D1F3E9463002CAF2F /* Coordinator.swift */,
+				FF765F4F1F3E9489002CAF2F /* AppCoordinator.swift */,
 			);
 			name = Coordinators;
 			sourceTree = "<group>";
@@ -246,9 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBC1E121F3E8AD2001ABDEB /* ViewController.swift in Sources */,
+				FF765F501F3E9489002CAF2F /* AppCoordinator.swift in Sources */,
+				FF765F4E1F3E9463002CAF2F /* Coordinator.swift in Sources */,
+				FF765F521F3E96F1002CAF2F /* TinderRootViewController.swift in Sources */,
 				FFBC1E101F3E8AD2001ABDEB /* AppDelegate.swift in Sources */,
-				FFBC1E221F3E8B7A001ABDEB /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +409,7 @@
 				FFBC1E201F3E8AD3001ABDEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
